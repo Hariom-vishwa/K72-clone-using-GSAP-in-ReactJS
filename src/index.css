@@ -11,6 +11,38 @@
 }
 
 body {
-  background-color: #030712;
   overflow-x: hidden;
+}
+
+
+.moveX{
+  animation-name: movingX;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moveLink{
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.link:hover .moveLink{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.close-button:hover .line{
+  background-color: #D3FD50;
+}
+
+
+@keyframes movingX {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
 }

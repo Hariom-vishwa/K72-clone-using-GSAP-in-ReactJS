@@ -2,10 +2,14 @@ import { Route, Routes } from "react-router-dom";
 import Agence from "./pages/Agence";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
+import Navbar from "./components/Common/Navigation/Navbar";
+import FullScreenNav from "./components/Common/Navigation/FullScreenNav";
 
 const App = () => {
   return (
     <>
+    <Navbar/>
+    <FullScreenNav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />

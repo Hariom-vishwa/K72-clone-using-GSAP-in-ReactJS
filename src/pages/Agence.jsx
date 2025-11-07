@@ -27,7 +27,7 @@ const Agence = () => {
       scrollTrigger: {
         trigger: imgDivRef.current,
         start: "top 30%",
-        end: "top -160%",
+        end: "top -130%",
         pin: true,
         pinSpacing:true,
         pinReparent:true,
@@ -50,7 +50,7 @@ const Agence = () => {
 
   return (
     <>
-      <div>
+      <div className="bg-[#030712]">
         <div className="section1 relative py-1">
           <div
             ref={imgDivRef}
@@ -59,7 +59,7 @@ const Agence = () => {
             <img
               ref={imgRef}
               className="w-full h-full object-cover"
-              src="./public/images/person-1.jpg"
+              src="/images/person-1.jpg"
               alt=""
             />
           </div>
