@@ -42,22 +42,22 @@ const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(function () {
-    gsap.from(".project-cards", {
-      height: "100px",
+    gsap.from('.project-cards', {
+      height: '100px',
       stagger: {
-        amount: 0.4,
+        amount: 0.4
       },
       scrollTrigger: {
-        trigger: ".projects",
-        start: "top 100%",
-        end: "top -150%",
-        scrub: true,
-      },
-    });
-  });
+        trigger: '.project-cards',
+        start: 'top 120%',
+        end: 'top -150%',
+        scrub: true
+      }
+    })
+  })
 
   return (
-    <div className="p-3 text-black bg-white ">
+    <div className="p-3 text-black bg-white mb-[100vh]">
       <div className="pt-[39.5vh]">
         <h2 className="font-[font2] uppercase text-[13vw] relative ">
           Projets{" "}
