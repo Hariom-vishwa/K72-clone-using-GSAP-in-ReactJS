@@ -49,7 +49,7 @@ const Projects = () => {
       },
       scrollTrigger: {
         trigger: '.project-cards',
-        start: 'top 120%',
+        start: 'top 100%',
         end: 'top -150%',
         scrub: true
       }
@@ -60,7 +60,7 @@ const Projects = () => {
     <div className="p-3 text-black bg-white mb-[100vh]">
       <div className="pt-[39.5vh]">
         <h2 className="font-[font2] uppercase text-[13vw] relative ">
-          Projets{" "}
+          Projets
           <span className="absolute text-[2.5rem] top-14 right-[37vw]">16</span>
         </h2>
       </div>
