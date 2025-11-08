@@ -43,7 +43,7 @@ const Projects = () => {
 
   useGSAP(function () {
     gsap.from(".project-cards", {
-      height: "10px",
+      height: "100px",
       stagger: {
         amount: 0.4,
       },
@@ -57,7 +57,7 @@ const Projects = () => {
   });
 
   return (
-    <div className="p-3 text-black bg-white mb-[100vh]">
+    <div className="p-3 text-black bg-white ">
       <div className="pt-[39.5vh]">
         <h2 className="font-[font2] uppercase text-[13vw] relative ">
           Projets{" "}
